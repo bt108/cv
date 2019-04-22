@@ -1,0 +1,157 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$fontsize$, a4paper]{article}
+
+% LAYOUT
+%--------------------------------
+% Margins
+\usepackage{geometry}
+\geometry{$geometry$}
+
+% Do not indent paragraphs
+\setlength\parindent{0pt}
+
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+
+% LANGUAGE
+%--------------------------------
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontenc}
+\linespread{1.2}
+% Lists
+%--------------------------------
+\usepackage{enumitem}
+%remove indent from list
+\setlist[itemize]{leftmargin=*}
+% Title
+%--------------------------------
+\usepackage{titling}
+
+\author{\uppercase{$name$}}
+
+\renewcommand{\maketitle}{\begin{center}
+	{\huge\bfseries\sffamily\theauthor}
+	\\
+	\sffamily{$for(address)$
+	$address$
+	$endfor$
+	\\$phone$ $email$
+	}
+	\vspace{-10pt}
+\end{center}
+}
+
+% HEADINGS
+%--------------------------------
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\footnotesize\bfseries\sffamily}
+{}
+{0pt}
+{\hrule\MakeUppercase}
+[]
+
+\titleformat{\subsection}
+{\Large}
+{}
+{0pt}
+{}
+[]
+
+\titleformat{\subsubsection}
+{\small\itshape}
+{}
+{0pt}
+{}
+[]
+
+\titlespacing{\section}
+{0pt}{0pt}{0pt}
+
+\titlespacing{\subsection}
+{0pt}{0pt}{-5pt}
+
+\titlespacing{\subsubsection}
+{0pt}{0pt}{5pt}
+
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup{pdfauthor={$name$},
+pdfsubject={$name$'s CV},
+pdftitle={$name$'s CV},
+colorlinks, breaklinks, xetex, bookmarks,
+filecolor=black,
+urlcolor=[rgb]{0.117,0.682,0.858},
+linkcolor=[rgb]{0.117,0.682,0.858},
+linkcolor=[rgb]{0.117,0.682,0.858},
+citecolor=[rgb]{0.117,0.682,0.858}
+}
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+
+\maketitle
+
+$if(intro)$
+$intro$
+$endif$
+
+% \subsection*{Areas of Interest}
+% $if(skills)$
+% \begin{itemize}
+% 		$for(skills)$
+% 	\item $skills$
+% 		$endfor$
+% \end{itemize}
+% $endif$
+
+% \vfill
+
+% \vspace{25pt}
+$if(education)$
+\section{Education}
+$for(education)$
+\subsection{$education.institute$\hfill $education.year$}
+\subsubsection{$education.subject$}
+$if(education.poi)$
+\begin{itemize}[noitemsep]
+		$for(education.poi)$
+	\item $education.poi$
+		$endfor$
+\end{itemize}
+$endif$
+$endfor$
+$endif$
+
+$if(experience)$
+\section{Business Experience}
+$for(experience)$
+\subsection{$experience.employer$\hfill $experience.years$}
+\subsubsection{$experience.job$}
+$if(experience.poi)$
+\begin{itemize}[noitemsep]
+		$for(experience.poi)$
+	\item $experience.poi$
+		$endfor$
+\end{itemize}
+$endif$
+$endfor$
+$endif$
+
+\end{document}

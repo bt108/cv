@@ -1,0 +1,49 @@
+---
+# Personal details
+name: Thomas Meulendijks
+address:
+- Elgarstraat 16,
+- 5653AH Eindhoven,
+- Netherlands
+phone: "+(31)613605413"
+email: T.Meulendijks@tuta.io
+# Insert URLs without http://
+urls:
+
+# Sections
+
+education:
+- year: 2021
+  subject: Infromation & Communication Techonology
+  institute: Fontys University of Applied Siences
+  city: Eindhoven
+  degree: BCs cum laude
+  # Points of interst
+  poi:
+  - Worked hard
+  - Played hard
+- year: 2021
+  subject: Infromation & Communication Techonology
+  institute: Fontys University of Applied Siences
+  city: Eindhoven
+  degree: BCs cum laude
+  # Points of interst
+  poi:
+  - Worked hard
+  - Played hard
+
+experience:
+- years: 2019-Now
+  employer: Eric Slaats
+  job: Delta
+  city: Eindhoven
+  # Points of interst
+  poi:
+  - Worked hard
+  - Played hard
+
+# Settings
+fontsize: 12pt
+lang: en-UK
+geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+---
