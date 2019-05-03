@@ -14,10 +14,10 @@
 
 % Enable multicolumns
 \usepackage{multicol}
-\setlength{\columnsep}{-3.5cm}
+%\setlength{\columnsep}{-3.5cm}
 
 % Uncomment to suppress page numbers
-% \pagenumbering{gobble}
+\pagenumbering{gobble}
 
 % LANGUAGE
 %--------------------------------
@@ -66,7 +66,7 @@ $endif$
 []
 
 \titleformat{\subsection}
-{\Large}
+{\large}
 {}
 {0pt}
 {}
@@ -86,7 +86,7 @@ $endif$
 {0pt}{0pt}{-5pt}
 
 \titlespacing{\subsubsection}
-{0pt}{0pt}{5pt}
+{0pt}{0pt}{0pt}
 
 % PDF SETUP
 %--------------------------------
@@ -142,8 +142,11 @@ $endif$
 $if(experience)$
 \section{Business Experience}
 $for(experience)$
-\subsection{$experience.employer$\hfill $experience.years$}
-\subsubsection{$experience.job$}
+\subsection{$experience.job$\hfill $experience.years$}
+\subsubsection{$experience.employer$}
+$if(experience.illustration)$
+$experience.illustration$
+$endif$
 $if(experience.poi)$
 \begin{itemize}[noitemsep]
 		$for(experience.poi)$
@@ -154,4 +157,27 @@ $endif$
 $endfor$
 $endif$
 
+$if(other)$
+\section{General}
+\begin{multicols}{2}
+$if(other.pro)$
+\subsection{Pros}
+\begin{itemize}[noitemsep]
+$for(other.pro)$
+\item $other.pro$
+$endfor$
+\end{itemize}
+\vfill\null
+\columnbreak
+$endif$
+$if(other.con)$
+\subsection{Cons}
+\begin{itemize}[noitemsep]
+$for(other.con)$
+\item $other.con$
+$endfor$
+\end{itemize}
+$endif$
+$endif$
+\end{multicols}
 \end{document}

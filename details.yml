@@ -8,42 +8,71 @@ address:
 phone: "+(31)613605413"
 email: T.Meulendijks@tuta.io
 # Insert URLs without http://
-urls:
 
 # Sections
 
 education:
-- year: 2021
+- year: 2017 - Now
   subject: Infromation & Communication Techonology
   institute: Fontys University of Applied Siences
   city: Eindhoven
-  degree: BCs cum laude
+  degree: Propodeuse Software Engineering
   # Points of interst
   poi:
-  - Worked hard
-  - Played hard
-- year: 2021
-  subject: Infromation & Communication Techonology
-  institute: Fontys University of Applied Siences
-  city: Eindhoven
-  degree: BCs cum laude
-  # Points of interst
-  poi:
-  - Worked hard
-  - Played hard
+  - Focus on Software Engineering and Innovation
+  - Part of excellence course Delta
 
 experience:
-- years: 2019-Now
-  employer: Eric Slaats
-  job: Delta
+
+- years: 2019 - Now
+  employer: Fontys University of Applied Siences
+  job: Institutions Participation Council
+  city: Eindhoven
+#  illustration: "Together with 4 other students, we are responsible for representing all students and providing the board with advice. We enacted changes in the way, for example, quality assurance and examinations work."
+  # Points of interst
+  poi:
+  - Representative of Fontys students
+  - Provide the board with advice
+  - Enact changes, for example, quality assurance and examinations.
+  - Developed critial examination
+  - Dare to speak my mind in presence of higher-ups
+
+- years: 2019 - Now
+  employer: Fontys University of Applied Siences
+  job: Teaching assistant
+  city: Eindhoven
+ #illustration: "I teach a Software class twice a week. During this time I am help students with individual problems and stand in front of the class to talk about A general problem the class has."
+  # Points of interst
+  poi:
+  - Teaching the Software Engineering semester two course
+  - Teaching in absence of a certified teacher
+  - Classroom presentations
+  - Interacting with students one on one
+
+- years: 2018 - Now
+  employer: Fontys University of Applied Siences ICT Department
+  job: Member of Delta excellence course
   city: Eindhoven
   # Points of interst
   poi:
-  - Worked hard
-  - Played hard
+  - Working in self-governing teams
+  - Communicate and work together with companies
+  - Managed multiple projects
+  - Broadened scope with skills like UX design and hardware programming
+
+other:
+  pro:
+  - Critical
+  - Fast learner
+  - Reads official documentation
+  - Enjoys helping others
+  - Uses Linux daily
+  con:
+  - Heavy dyslexia
+  - Spends a lot of time helping others
 
 # Settings
 fontsize: 12pt
 lang: en-UK
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: a4paper, left=25mm, right=25mm, top=20mm, bottom=20mm
 ---
