@@ -127,6 +127,7 @@ $endif$
 $if(education)$
 \section{Education}
 $for(education)$
+$if(education.vis)$
 \subsection{$education.institute$\hfill $education.year$}
 \subsubsection{$education.subject$}
 $if(education.poi)$
@@ -136,12 +137,14 @@ $if(education.poi)$
 		$endfor$
 \end{itemize}
 $endif$
+$endif$
 $endfor$
 $endif$
 
 $if(experience)$
 \section{Business Experience}
 $for(experience)$
+$if(experience.vis)$
 \subsection{$experience.job$\hfill $experience.years$}
 \subsubsection{$experience.employer$}
 $if(experience.illustration)$
@@ -154,7 +157,37 @@ $if(experience.poi)$
 		$endfor$
 \end{itemize}
 $endif$
+$endif$
 $endfor$
+$endif$
+
+$if(nonformal)$
+\section{Other Experiences}
+$for(nonformal)$
+$if(nonformal.vis)$
+\subsection{$nonformal.job$\hfill $nonformal.years$}
+\subsubsection{$nonformal.employer$}
+$if(nonformal.illustration)$
+$nonformal.illustration$
+$endif$
+$if(nonformal.poi)$
+\begin{itemize}[noitemsep]
+		$for(nonformal.poi)$
+	\item $nonformal.poi$
+		$endfor$
+\end{itemize}
+$endif$
+$endif$
+$endfor$
+$endif$
+
+$if(characteristics)$
+\section{Characteristics}
+\begin{itemize}[noitemsep]
+$for(characteristics.item)$
+\item $characteristics.item$
+$endfor$
+\end{itemize}
 $endif$
 
 $if(other)$
@@ -178,6 +211,6 @@ $for(other.con)$
 $endfor$
 \end{itemize}
 $endif$
-$endif$
 \end{multicols}
+$endif$
 \end{document}
