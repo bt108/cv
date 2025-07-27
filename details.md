@@ -45,7 +45,8 @@ timeline:
       vis: y
       heading: Insights on Modern Society
       subtext: A Journey Towards Agrarian Solutions
-      par: Having directly engaged with the manipulation of behaviour through technology, I became increasingly disturbed by modern society. This prompted me to study influential works such as *The Technological Society* by Jacques Ellul and *Industrial Society and Its Future* by Theodore John Kaczynski. Through this research, I recognised the necessity for an agrarian society, which led me to continuously explore self-reliance methods and travel to numerous remote areas in Europe for a total of about four years, leaving behind all technology, including my phone. During this extensive journey, my understanding of the required societal structure was ultimately perfected by the writings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, who proposed a god-given framework for society.
+      par: Disturbed by meaningless consumerism driven by digital propaganda, I studied the works of authors like Ellul, Kaczynski, Thoreau and Epictetus. I realised that an agrarian society will mitigate the miserable and unnatural state of our technological society. This led me to give up my house and belongings, setting out with only a small bag to discover if such a culture still exists. \newline Depending on God for guidance, I traveled across Europe without money, phone, or contacts, finding remnants of destroyed agrarian societies everywhere. Through this research, I learned how they lived and became convinced that a simple, self-sufficient life is not only possible but easy, contrary to contemporary narratives. \newline My journey culminated in discovering the writings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, who revealed a divine agrarian structure destined to dominate society, empowering us to realize this vision.
+
     - time: May 2022 - Sept 2023
       vis: y
       heading: New Vraja Dhāma
@@ -72,12 +73,12 @@ timeline:
 characteristics:
   heading: Character and Abilities
   item:
-    - heading: Personal Attributes
-      par: Being simple helps me communicate clearly. My independent nature allows me to work without relying on others, and my autonomy enables effective task management. I prefer working alone and often seek solitude to enhance my focus and productivity.
     - heading: Cognitive Skills
-      par: My strong analytical skills and meticulous work ensure high quality. I learn quickly and am an astute reader, which helps me understand complex information. Managing dyslexia encourages my creative problem-solving.
+      par: Possessing strong analytical thinking and a careful attention to detail. I learn quickly and am an astute reader, which helps me understand complex information. However, I have dyslexia and poor memory, which hinders my writing and retention.
+    - heading: Personal Attributes
+      par: My independent nature makes it my preference to work without direct supervision. I take great pleasure in solitude, as it enhances my concentration and productivity. Additionally, my simplicity allows me to look through complexity and find straightforward solutions.
     - heading: Interpersonal Qualities
-      par: There is a strong eagerness to serve, especially in one-on-one settings where I can provide personalized support. Large groups can be challenging, as I prefer smaller, more intimate interactions. My speech can be direct and harsh at times, particularly in relation to authority, which I acknowledge and am working to improve.
+      par: I deeply value serving others, especially in one-on-one settings. Large groups can be draining for me; I prefer more intimate environments. I recognize that my speech can sometimes be direct and harsh, particularly towards authority, and I am actively working to improve this.
     # - Simple
     # - Independent
     # - Autonomous
