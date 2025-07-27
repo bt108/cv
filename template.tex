@@ -31,11 +31,13 @@ $endif$
 %--------------------------------
 \usepackage{fontenc}
 \linespread{1.2}
+
 % Lists
 %--------------------------------
 \usepackage{enumitem}
 %remove indent from list
 \setlist[itemize]{leftmargin=*}
+
 % Title
 %--------------------------------
 \usepackage{titling}
@@ -44,11 +46,10 @@ $endif$
 
 \renewcommand{\maketitle}{\begin{center}
 	{\huge\bfseries\sffamily\theauthor}
-	\\
-	\sffamily{$for(address)$
-	$address$
+  \\
+	\sffamily{$for(contact)$
+	$contact$
 	$endfor$
-	\\$phone$ $email$
 	}
 	\vspace{-10pt}
 \end{center}
@@ -112,71 +113,20 @@ $if(intro)$
 $intro$
 $endif$
 
-% \subsection*{Areas of Interest}
-% $if(skills)$
-% \begin{itemize}
-% 		$for(skills)$
-% 	\item $skills$
-% 		$endfor$
-% \end{itemize}
-% $endif$
-
-% \vfill
-
-% \vspace{25pt}
-$if(education)$
-\section{Education}
-$for(education)$
-$if(education.vis)$
-\subsection{$education.institute$\hfill $education.year$}
-\subsubsection{$education.subject$}
-$if(education.poi)$
+$if(timeline)$
+\section{$timeline.heading$}
+$for(timeline.list)$
+$if(timeline.list.vis)$
+\subsection{$timeline.list.heading$\hfill $timeline.list.time$}
+\subsubsection{$timeline.list.subtext$}
+$if(timeline.list.par)$
+\small{$timeline.list.par$}
+\vspace{1em}
+$endif$
+$if(timeline.list.list)$
 \begin{itemize}[noitemsep]
-		$for(education.poi)$
-	\item $education.poi$
-		$endfor$
-\end{itemize}
-$endif$
-$endif$
-$endfor$
-$endif$
-
-$if(experience)$
-\section{Business Experience}
-$for(experience)$
-$if(experience.vis)$
-\subsection{$experience.job$\hfill $experience.years$}
-\subsubsection{$experience.employer$}
-$if(experience.illustration)$
-$experience.illustration$
-$endif$
-$if(experience.poi)$
-\begin{itemize}[noitemsep]
-		$for(experience.poi)$
-	\item $experience.poi$
-		$endfor$
-\end{itemize}
-$endif$
-$endif$
-$endfor$
-$endif$
-
-$if(nonformal)$
-\section{Non formal}
-$for(nonformal)$
-$if(nonformal.vis)$
-\subsection{$nonformal.job$\hfill $nonformal.years$}
-\subsubsection{$nonformal.employer$}
-$if(nonformal.illustration)$
-$nonformal.illustration$
-$endif$
-$if(nonformal.par)$
-{$nonformal.par$}
-$endif$
-$if(nonformal.poi)$
-\begin{itemize}[noitemsep]
-		$for(nonformal.poi)$
-	\item $nonformal.poi$
+		$for(timeline.list.list)$
+	\item $timeline.list.list$
 		$endfor$
 \end{itemize}
 $endif$
@@ -185,37 +135,15 @@ $endfor$
 $endif$
 
 $if(characteristics)$
-\section{Characteristics}
-\begin{multicols}{2}
-\begin{itemize}[noitemsep]
-$for(characteristics.item)$
-\item $characteristics.item$
-$endfor$
-\end{itemize}
-\end{multicols}
+ \section{$characteristics.heading$}
+ \begin{multicols}{3}
+  $for(characteristics.item)$
+    \subsection{$characteristics.item.heading$}
+    {\noindent \small $characteristics.item.par$ }
+    \vfill\null
+    \columnbreak
+  $endfor$
+ \end{multicols}
 $endif$
 
-$if(other)$
-\section{General}
-\begin{multicols}{2}
-$if(other.pro)$
-\subsection{Pros}
-\begin{itemize}[noitemsep]
-$for(other.pro)$
-\item $other.pro$
-$endfor$
-\end{itemize}
-\vfill\null
-\columnbreak
-$endif$
-$if(other.con)$
-\subsection{Cons}
-\begin{itemize}[noitemsep]
-$for(other.con)$
-\item $other.con$
-$endfor$
-\end{itemize}
-$endif$
-\end{multicols}
-$endif$
 \end{document}
