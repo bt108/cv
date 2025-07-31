@@ -42,17 +42,28 @@ timeline:
         - Entrepreneurial skills
         - Servicing individuals and small businesses
     - time: 2020 - 2022
-      vis: y
+      vis: n
       heading: Insights on Modern Society
       subtext: A Journey Towards Agrarian Solutions
       par: Disturbed by meaningless consumerism driven by digital propaganda, I studied the works of authors like Ellul, Kaczynski, Thoreau and Epictetus. I realised that an agrarian society will mitigate the miserable and unnatural state of our technological society. This led me to give up my house and belongings, setting out with only a small bag to discover if such a culture still exists. \newline Depending on God for guidance, I traveled across Europe without money, phone, or contacts, finding remnants of destroyed agrarian societies everywhere. Through this research, I learned how they lived and became convinced that a simple, self-sufficient life is not only possible but easy, contrary to contemporary narratives. \newline My journey culminated in discovering the writings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, who revealed a divine agrarian structure destined to dominate society, empowering us to realize this vision.
-
-    - time: May 2022 - Sept 2023
+    - time: 2020 - 2024
       vis: y
+      heading: Travel
+      subtext: Diverse Solidary & Religious Organizations
+      list:
+        - "Volunteer & Charity Work: Engaged in diverse community service projects."
+        - "Cultural Journey: Explored from Swedish forests to Holy India."
+        - "Cross-Cultural Communication: Developed strong skills through diverse interactions."
+        - "Character Development: Built resilience in multicultural environments."
+        - "Self-Motivated Work Ethic: Managed projects independently."
+        - "Leadership & Mentoring: Guided peers in collaborative settings."
+    - time: May 2022 - Sept 2023
+      vis: n
       heading: New Vraja Dhāma
       subtext: ISKCON Farm Community, Hungary
       list:
-        - "2022 May 30: Started volunteering programme"
+        - "2022 May 24: Budapest, First time meeting a devotee"
+        - "2022 May 30: Started volunteering programme at the Goshala"
         - "2022 Jun 1: Started chanting 16 rounds & 4 Regulative Principles"
         - "2022 Jun 27 - Aug 8: Successfully completed the bhakta-program"
         - "2023 May 6: Taken the Śrīla Prabhupāda-āśrāya Oath (16 Rounds, 4 Reg.)"
@@ -64,15 +75,37 @@ timeline:
         - Head of Technical Department
         - Contributions to curriculum development
     - time: Okt 2024 - Mar 2025
-      vis: y
+      vis: n
       heading: \?\?
       subtext: Śrī Dhāma Māyāpur, India
       list:
         - Participated in Bhakti-sāstrī course at the Māyāpur Institute
         - Associated with HH Bhakti Ragava Mahārāja; studied Vārṇāśrama Dharma
+
 characteristics:
   heading: Character and Abilities
-  item:
+  list:
+    - heading: Cognitive Skills
+      subtext: Analytical and Adaptive Thinker
+      list:
+        - Strong analytical thinking with careful attention to detail.
+        - Quick learner and astute reader, aiding in understanding complex information.
+        - Able to use different methods to improve understanding and learning.
+    - heading: Personal Attributes
+      subtext: Independent and Solution-Oriented
+      list:
+        - Independent nature; prefers working without direct supervision.
+        - Enjoys solitude, enhancing concentration and productivity.
+        - Ability to simplify complexity and find straightforward solutions.
+    - heading: Interpersonal Qualities
+      subtext: Empathetic and Relationship-Focused
+      list:
+        - Values serving others, especially in one-on-one settings.
+        - Prefers intimate environments over large groups to avoid feeling drained.
+        - Committed to fostering positive communication and building rapport with others.
+characteristics-off:
+  heading: Character and Abilities
+  list:
     - heading: Cognitive Skills
       par: Possessing strong analytical thinking and a careful attention to detail. I learn quickly and am an astute reader, which helps me understand complex information. However, I have dyslexia and poor memory, which hinders my writing and retention.
     - heading: Personal Attributes

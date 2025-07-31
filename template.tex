@@ -10,7 +10,7 @@
 \geometry{$geometry$}
 
 % Do not indent paragraphs
-\setlength\parindent{0pt}
+\setlength{\parindent}{0pt}
 
 % Enable multicolumns
 \usepackage{multicol}
@@ -45,12 +45,7 @@ $endif$
 \author{\uppercase{$name$}}
 
 \renewcommand{\maketitle}{\begin{center}
-	{\huge\bfseries\sffamily\theauthor}
-  \\
-	\sffamily{$for(contact)$
-	$contact$
-	$endfor$
-	}
+	{\huge\bfseries\sffamily\theauthor} \\ \sffamily{$for(contact)$ $contact$ $endfor$ }
 	\vspace{-10pt}
 \end{center}
 }
@@ -92,58 +87,56 @@ $endif$
 % PDF SETUP
 %--------------------------------
 \usepackage{hyperref}
-\hypersetup{pdfauthor={$name$},
-pdfsubject={$name$'s CV},
-pdftitle={$name$'s CV},
-colorlinks, breaklinks, xetex, bookmarks,
-filecolor=black,
-urlcolor=[rgb]{0.117,0.682,0.858},
-linkcolor=[rgb]{0.117,0.682,0.858},
-linkcolor=[rgb]{0.117,0.682,0.858},
-citecolor=[rgb]{0.117,0.682,0.858}
+\hypersetup{
+	pdfauthor={$name$},
+	pdfsubject={$name$'s CV},
+	pdftitle={$name$'s CV},
+	colorlinks,
+	breaklinks,
+	xetex,
+	bookmarks,
+	filecolor=black,
+	urlcolor=[rgb]{0.117,0.682,0.858},
+	linkcolor=[rgb]{0.117,0.682,0.858},
+	linkcolor=[rgb]{0.117,0.682,0.858},
+	citecolor=[rgb]{0.117,0.682,0.858}
 }
 
 % DOCUMENT
 %--------------------------------
 \begin{document}
+	\maketitle
 
-\maketitle
+	$if(intro)$ $intro$ $endif$
 
-$if(intro)$
-$intro$
-$endif$
-
-$if(timeline)$
-\section{$timeline.heading$}
-$for(timeline.list)$
-$if(timeline.list.vis)$
-\subsection{$timeline.list.heading$\hfill $timeline.list.time$}
-\subsubsection{$timeline.list.subtext$}
-$if(timeline.list.par)$
-\small{$timeline.list.par$}
-\vspace{1em}
-$endif$
-$if(timeline.list.list)$
-\begin{itemize}[noitemsep]
+	$if(timeline)$
+	\section{$timeline.heading$}
+	$for(timeline.list)$ $if(timeline.list.vis)$
+	\subsection{$timeline.list.heading$\hfill $timeline.list.time$}
+	\subsubsection{$timeline.list.subtext$}
+	$if(timeline.list.par)$ \small{$timeline.list.par$}
+	\vspace{1em}
+	$endif$ $if(timeline.list.list)$
+	\begin{itemize}[noitemsep]
 		$for(timeline.list.list)$
-	\item $timeline.list.list$
-		$endfor$
-\end{itemize}
-$endif$
-$endif$
-$endfor$
-$endif$
+		\item $timeline.list.list$ $endfor$
+	\end{itemize}
+	$endif$ $endif$ $endfor$ $endif$
 
-$if(characteristics)$
- \section{$characteristics.heading$}
- %\begin{multicols}{3}
-  $for(characteristics.item)$
-    \subsection{$characteristics.item.heading$}
-    {\small $characteristics.item.par$ }
-  %  \vfill\null
-  %  \columnbreak
-  $endfor$
- %\end{multicols}
-$endif$
-
+	$if(characteristics)$
+	\section{$characteristics.heading$}
+	$for(characteristics.list)$
+	\subsection{$characteristics.list.heading$}
+  $if(characteristics.list.subtext)$\subsubsection{$characteristics.list.subtext$}$endif$
+	$if(characteristics.list.par)$ {\small $characteristics.list.par$ } $endif$
+  $if(characteristics.list.list)$
+	\begin{itemize}[noitemsep]
+		$for(characteristics.list.list)$
+		\item $characteristics.list.list$ $endfor$
+	\end{itemize}
+	$endif$ $endfor$ $endif$
 \end{document}
+%\begin{multicols}{3}
+%  \vfill\null
+%  \columnbreak
+%\end{multicols}
