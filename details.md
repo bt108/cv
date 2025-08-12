@@ -10,14 +10,14 @@ contact:
 timeline:
   heading: Timeline
   list:
-    - time: 2017 - 2019
+    - time: 2017 - 2020
       vis: y
       heading: Information & Communication Technology
       subtext: Fontys University of Applied Sciences
       list:
         - Focus on Software Engineering and Innovation
         - Part of excellence course 'Delta'
-    - time: 2019
+    - time: 2019 - 2020
       vis: y
       heading: Institutions Participation Council
       subtext: Fontys University of Applied Sciences
@@ -25,7 +25,7 @@ timeline:
         - Student Representative, advising the board and driving changes
         - Provided strategic advice to the board on key student issues
         - Implemented QA and exam changes, enhancing student outcomes
-    - time: 2019
+    - time: 2019 - 2020
       vis: y
       heading: Teacher's Assistant
       subtext: Fontys University of Applied Sciences ICT Department
