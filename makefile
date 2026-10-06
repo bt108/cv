@@ -1,10 +1,9 @@
-TEX = pandoc
-src = template.tex details.md
-FLAGS = --pdf-engine=xelatex
+TYPST = typst
+src = main.typ template.typ details.yml
 
 output.pdf : $(src)
-	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
+	$(TYPST) compile main.typ $@
 
 .PHONY: clean
 clean :
-	rm output.pdf
+	rm -f output.pdf

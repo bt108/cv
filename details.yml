@@ -1,12 +1,16 @@
----
 # Personal details
 name: Thomas Meulendijks
 contact:
-  - \href{mailto:t108.servant@gmail.com}{t108.servant@gmail.com}\,
-  - \href{tel:+31619275350}{+31 619 275 350}\,
-  - \href{tel:+919910629866}{+91 99106 29866}
+  - text: t108.servant@gmail.com
+    url: mailto:t108.servant@gmail.com
+  - text: +31 619 275 350
+    url: tel:+31619275350
+  - text: +91 99106 29866
+    url: tel:+919910629866
 
 # Sections
+intro: null
+
 timeline:
   heading: Timeline
   list:
@@ -45,7 +49,10 @@ timeline:
       vis: n
       heading: Insights on Modern Society
       subtext: A Journey Towards Agrarian Solutions
-      par: Disturbed by meaningless consumerism driven by digital propaganda, I studied the works of authors like Ellul, Kaczynski, Thoreau and Epictetus. I realised that an agrarian society will mitigate the miserable and unnatural state of our technological society. This led me to give up my house and belongings, setting out with only a small bag to discover if such a culture still exists. \newline Depending on God for guidance, I traveled across Europe without money, phone, or contacts, finding remnants of destroyed agrarian societies everywhere. Through this research, I learned how they lived and became convinced that a simple, self-sufficient life is not only possible but easy, contrary to contemporary narratives. \newline My journey culminated in discovering the writings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, who revealed a divine agrarian structure destined to dominate society, empowering us to realize this vision.
+      par: |
+        Disturbed by meaningless consumerism driven by digital propaganda, I studied the works of authors like Ellul, Kaczynski, Thoreau and Epictetus. I realised that an agrarian society will mitigate the miserable and unnatural state of our technological society. This led me to give up my house and belongings, setting out with only a small bag to discover if such a culture still exists.
+        Depending on God for guidance, I traveled across Europe without money, phone, or contacts, finding remnants of destroyed agrarian societies everywhere. Through this research, I learned how they lived and became convinced that a simple, self-sufficient life is not only possible but easy, contrary to contemporary narratives.
+        My journey culminated in discovering the writings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, who revealed a divine agrarian structure destined to dominate society, empowering us to realize this vision.
     - time: 2020 - 2024
       vis: y
       heading: Travel
@@ -76,7 +83,7 @@ timeline:
         - Contributions to curriculum development
     - time: Okt 2024 - Mar 2025
       vis: n
-      heading: \?\?
+      heading: "??"
       subtext: Śrī Dhāma Māyāpur, India
       list:
         - Participated in Bhakti-sāstrī course at the Māyāpur Institute
@@ -103,6 +110,9 @@ characteristics:
         - Values serving others, especially in one-on-one settings.
         - Prefers intimate environments over large groups to avoid feeling drained.
         - Committed to fostering positive communication and building rapport with others.
+
+# Alternate paragraph-style variant (not rendered; kept for reference).
+# Mirrors the old `characteristics-off` block from details.md.
 characteristics-off:
   heading: Character and Abilities
   list:
@@ -112,18 +122,12 @@ characteristics-off:
       par: My independent nature makes it my preference to work without direct supervision. I take great pleasure in solitude, as it enhances my concentration and productivity. Additionally, my simplicity allows me to look through complexity and find straightforward solutions.
     - heading: Interpersonal Qualities
       par: I deeply value serving others, especially in one-on-one settings. Large groups can be draining for me; I prefer more intimate environments. I recognize that my speech can sometimes be direct and harsh, particularly towards authority, and I am actively working to improve this.
-    # - Simple
-    # - Independent
-    # - Autonomous
-    # - Analytical
-    # - Meticulous
-    # - Apt
-    # - Astute reader
-    # - Eager to serve
-    # - Dyslexia
 
- #Settings
+# Settings (replaces pandoc frontmatter `fontsize`, `lang`, `geometry`)
 fontsize: 12pt
-lang: en-UK
-geometry: a4paper, left=25mm, right=25mm, top=20mm, bottom=20mm
----
+lang: en
+margins:
+  left: 25mm
+  right: 25mm
+  top: 20mm
+  bottom: 20mm
