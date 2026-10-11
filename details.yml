@@ -136,7 +136,7 @@ characteristics:
 fontsize: 12pt
 lang: en
 margins:
-  left: 20mm
-  right: 20mm
-  top: 18mm
-  bottom: 18mm
+  left: 15mm
+  right: 15mm
+  top: 14mm
+  bottom: 14mm
