@@ -7,9 +7,9 @@ contact:
     url: tel:+31619275350
   - text: IN +91 99106 29866 (current)
     url: tel:+919910629866
-  # TODO: add GitHub / portfolio / LinkedIn when ready
-  # - text: github.com/YOU
-  #   url: https://github.com/YOU
+  # TODO: add portfolio / LinkedIn when ready
+  - text: github.com/bt108
+    url: https://github.com/bt108
 
 # Sections
 intro: Digital nomad based in India (IST, UTC+5:30), registered as sole proprietor in the Netherlands. ICT background with experience in software support, teaching, and IT management. Available for remote work worldwide with overlap in EU and US hours. Able to invoice in the EU.
