@@ -103,7 +103,7 @@
   let intro = data.at("intro", default: none)
   if intro != none {
     v(0.4em)
-    par[#intro]
+    par(justify: true)[#intro]
   }
 
   // --- Two-column body: narrow sidebar | wide main (intro stays full-width above) ---
