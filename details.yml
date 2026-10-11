@@ -3,9 +3,9 @@ name: Thomas Meulendijks
 contact:
   - text: t108.servant@gmail.com
     url: mailto:t108.servant@gmail.com
-  - text: NL +31 619 275 350 (business)
+  - text: NL +31 619 275 350
     url: tel:+31619275350
-  - text: IN +91 99106 29866 (current)
+  - text: IN +91 99106 29866
     url: tel:+919910629866
   # TODO: add portfolio / LinkedIn when ready
   - text: github.com/bt108

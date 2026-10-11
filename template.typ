@@ -5,7 +5,7 @@
 //   #let data = yaml("details.yml")
 //   #cv(data)
 
-#let link-blue = rgb("#1eaedb")
+#let link-blue = rgb("#0e4d6e")
 
 #let cv-section(heading) = {
   v(0.6em)
@@ -86,9 +86,16 @@
   // --- Title block (replaces \maketitle) ---
   align(center)[
     #text(size: 25pt, weight: "bold", font: "DejaVu Sans", upper(data.name)) \
-    #text(font: "DejaVu Sans")[
-      #data.at("contact", default: ()).map(c => [#link(c.url)[#c.text]]).join([, ])
-    ]
+    #{
+      let contact = data.at("contact", default: ())
+      let online = contact.filter(c => not c.url.starts-with("tel:"))
+      let phones = contact.filter(c => c.url.starts-with("tel:"))
+      text(size: 9.5pt, font: "DejaVu Sans")[
+        #online.map(c => box(link(c.url)[#c.text])).join([ #h(0.4em) · #h(0.4em) ])
+        #if online.len() > 0 and phones.len() > 0 [ \ ]
+        #phones.map(c => box(link(c.url)[#c.text])).join([ #h(0.4em) · #h(0.4em) ])
+      ]
+    }
   ]
   v(-0.4em)
 
