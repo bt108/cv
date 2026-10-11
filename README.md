@@ -2,9 +2,8 @@
 
 [![built with Typst](https://img.shields.io/badge/built%20with-Typst-blue)](https://typst.app)
 
-A data-driven CV: content lives in YAML, layout in a Typst template, output
-is a one-page PDF. For keeping a CV as version-controlled plain text — edit
-`details.yml`, run `make`, get `output.pdf`.
+Content in `details.yml`, layout in a Typst template, output a one-page PDF —
+for keeping a CV as version-controlled plain text.
 
 ## 30-second example
 
@@ -27,42 +26,38 @@ make clean    # rm -f output.pdf
 
 ## Sample output
 
-`output.pdf`, rendered at 150 dpi:
+`output.pdf` at 150 dpi:
 
 ![CV preview](docs/img/preview.png)
 
 ## Prerequisites
 
-- Typst (`typst`) — compiles `main.typ` to PDF.
-  Install: `sudo snap install typst --classic`, or `cargo install typst-cli`.
-- DejaVu Sans font — title and section headings render in it
-  (see `template.typ`); the build fails if it is missing.
+| Tool | Why |
+|---|---|
+| Typst (`typst`) | Compiles `main.typ` to PDF (`snap install typst --classic` or `cargo install typst-cli`) |
+| DejaVu Sans font | Title + headings render in it; build fails without it |
 
 ## Commands
 
-```sh
-make          # default target: typst compile main.typ → output.pdf
-make clean    # rm -f output.pdf
-```
+| Command | Effect |
+|---|---|
+| `make` | Default target: `typst compile main.typ → output.pdf` |
+| `make clean` | `rm -f output.pdf` |
 
 ## Project layout
 
 ```
-main.typ            # entrypoint: yaml("details.yml") -> cv(data)
-template.typ        # layout only: cv() function, section/entry helpers
-details.yml         # content only, no formatting (vis: y renders, else hidden)
-makefile            # typst compile main.typ output.pdf
-docs/img/preview.png  # rendered output.pdf (checked in for this README)
-output.pdf          # build output (git-ignored)
+main.typ              # entrypoint: yaml("details.yml") -> cv(data)
+template.typ          # layout only: cv(), section/entry helpers
+details.yml           # content only (vis: y renders, else hidden)
+makefile              # typst compile main.typ output.pdf
+docs/img/preview.png  # README screenshot (rendered output.pdf)
+output.pdf            # build output (git-ignored)
 ```
 
 ## Content model
 
-- **details.yml** → contact list, intro paragraph, skills, timeline, strengths,
-  plus page settings (`fontsize`, `lang`, `margins`).
-- **main.typ** loads the YAML and calls `cv(data)` from `template.typ`.
-- **Timeline entries** carry `vis: y` to render; anything else keeps the entry
-  in-file but hidden (alternate versions without branches).
-- **Layout** is a two-column grid: skills + strengths sidebar, experience main
-  column, intro full-width above.
-- **Single source of truth**: the PDF is never hand-edited; rebuild via `make`.
+- `details.yml` → contact, intro, skills, timeline, strengths + page settings.
+- `main.typ` feeds it to `cv()` in `template.typ` (two-column grid).
+- `vis: y` renders an entry; anything else hides it in-file.
+- PDF is never hand-edited; rebuild via `make`.
