@@ -3,48 +3,92 @@ name: Thomas Meulendijks
 contact:
   - text: t108.servant@gmail.com
     url: mailto:t108.servant@gmail.com
-  - text: +31 619 275 350
+  - text: NL +31 619 275 350 (business)
     url: tel:+31619275350
-  - text: +91 99106 29866
+  - text: IN +91 99106 29866 (current)
     url: tel:+919910629866
+  # TODO: add GitHub / portfolio / LinkedIn when ready
+  # - text: github.com/YOU
+  #   url: https://github.com/YOU
 
 # Sections
-intro: null
+intro: Digital nomad based in India (IST, UTC+5:30), registered as sole proprietor in the Netherlands. ICT background with experience in software support, teaching, and IT management. Available for remote work worldwide with overlap in EU and US hours. Able to invoice in the EU.
+
+skills:
+  heading: Technical Skills
+  list:
+    - heading: Core — daily use
+      list:
+        - Linux (daily driver, troubleshooting)
+        - Git / GitHub
+        - HTML / CSS
+        - Bash scripting
+        - AI-assisted development and code review
+    - heading: Working knowledge — prior experience
+      list:
+        - JavaScript, React, Vue, Node.js
+        - Python scripting and automation
+    - heading: Familiar — coursework
+      list:
+        - Java, Go
+    - heading: Support & Collaboration
+      list:
+        - Technical troubleshooting and documentation
+        - 1:1 teaching and user support
+        - Remote async work across time zones (IST, EU/US overlap)
+        - Clear English communication in multicultural teams
 
 timeline:
-  heading: Timeline
+  heading: Experience & Education
   list:
+    - time: Sep 2023 - Oct 2024
+      vis: y
+      heading: Head of Technical Department
+      subtext: Vrindavan Institute for Higher Education, India
+      list:
+        - Managed technical operations and day-to-day IT support for staff and students
+        - Maintained systems, documentation, and learning materials
+        - Contributed to curriculum development with teaching staff
+        - Provided 1:1 training and troubleshooting for users
+    - time: 2020 - 2024
+      vis: y
+      heading: Volunteer & Community Work
+      subtext: Various NGOs and community projects, Europe & India
+      list:
+        - Community service and peer mentoring in multicultural teams
+        - Cross-cultural communication in English, remote coordination
+        - Self-managed logistics and independent projects
+        - Resilient, reliable work in changing environments
+    - time: 2019 - 2020
+      vis: y
+      heading: Software Support & Education
+      subtext: Sole Proprietor, Netherlands
+      list:
+        - Software troubleshooting and tutoring for individuals and small businesses
+        - Email and in-person support, setup and problem resolution
+        - Administration and invoicing as independent contractor
+    - time: 2019 - 2020
+      vis: y
+      heading: Teacher's Assistant
+      subtext: Fontys University of Applied Sciences, ICT Department
+      list:
+        - Assisted semester two of Software Engineering
+        - Led classes in absence of certified teacher
+        - Classroom presentations and 1:1 student guidance
+    - time: 2019 - 2020
+      vis: y
+      heading: Student Representative
+      subtext: Institutions Participation Council, Fontys University of Applied Sciences
+      list:
+        - Advised the board on student issues and exam policy
+        - Contributed to QA and exam changes improving student outcomes
     - time: 2017 - 2020
       vis: y
       heading: Information & Communication Technology
       subtext: Fontys University of Applied Sciences
       list:
-        - Focus on Software Engineering and Innovation
-        - Part of excellence course 'Delta'
-    - time: 2019 - 2020
-      vis: y
-      heading: Institutions Participation Council
-      subtext: Fontys University of Applied Sciences
-      list:
-        - Student Representative, advising the board and driving changes
-        - Provided strategic advice to the board on key student issues
-        - Implemented QA and exam changes, enhancing student outcomes
-    - time: 2019 - 2020
-      vis: y
-      heading: Teacher's Assistant
-      subtext: Fontys University of Applied Sciences ICT Department
-      list:
-        - Taught semester two of Software Engineering
-        - Led classes in the absence of a certified teacher
-        - Delivered classroom presentations and one-on-one student guidance
-    - time: 2019 - 2020
-      vis: y
-      heading: Software Support & Education
-      subtext: Sole Proprietor
-      list:
-        - Customer Service Excellence
-        - Entrepreneurial skills
-        - Servicing individuals and small businesses
+        - Coursework in Software Engineering and Innovation
+        - Selected for 'Delta' excellence program
     - time: 2020 - 2022
       vis: n
       heading: Insights on Modern Society
@@ -53,18 +97,7 @@ timeline:
         Disturbed by meaningless consumerism driven by digital propaganda, I studied the works of authors like Ellul, Kaczynski, Thoreau and Epictetus. I realised that an agrarian society will mitigate the miserable and unnatural state of our technological society. This led me to give up my house and belongings, setting out with only a small bag to discover if such a culture still exists.
         Depending on God for guidance, I traveled across Europe without money, phone, or contacts, finding remnants of destroyed agrarian societies everywhere. Through this research, I learned how they lived and became convinced that a simple, self-sufficient life is not only possible but easy, contrary to contemporary narratives.
         My journey culminated in discovering the writings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, who revealed a divine agrarian structure destined to dominate society, empowering us to realize this vision.
-    - time: 2020 - 2024
-      vis: y
-      heading: Travel
-      subtext: Diverse Solidary & Religious Organizations
-      list:
-        - "Volunteer & Charity Work: Engaged in diverse community service projects."
-        - "Cultural Journey: Explored from Swedish forests to Holy India."
-        - "Cross-Cultural Communication: Developed strong skills through diverse interactions."
-        - "Character Development: Built resilience in multicultural environments."
-        - "Self-Motivated Work Ethic: Managed projects independently."
-        - "Leadership & Mentoring: Guided peers in collaborative settings."
-    - time: May 2022 - Sept 2023
+    - time: May 2022 - Sep 2023
       vis: n
       heading: New Vraja Dhāma
       subtext: ISKCON Farm Community, Hungary
@@ -74,14 +107,7 @@ timeline:
         - "2022 Jun 1: Started chanting 16 rounds & 4 Regulative Principles"
         - "2022 Jun 27 - Aug 8: Successfully completed the bhakta-program"
         - "2023 May 6: Taken the Śrīla Prabhupāda-āśrāya Oath (16 Rounds, 4 Reg.)"
-    - time: Sept 2023 - Okt 2024
-      vis: y
-      heading: Vrindavan Institute for Higher Education
-      subtext: Śrī Śrī Vrindavan Dhāma, India
-      list:
-        - Head of Technical Department
-        - Contributions to curriculum development
-    - time: Okt 2024 - Mar 2025
+    - time: Oct 2024 - Mar 2025
       vis: n
       heading: "??"
       subtext: Śrī Dhāma Māyāpur, India
@@ -90,44 +116,29 @@ timeline:
         - Associated with HH Bhakti Ragava Mahārāja; studied Vārṇāśrama Dharma
 
 characteristics:
-  heading: Character and Abilities
+  heading: Professional Strengths
   list:
-    - heading: Cognitive Skills
-      subtext: Analytical and Adaptive Thinker
+    - heading: Reliable and Independent
       list:
-        - Strong analytical thinking with careful attention to detail.
-        - Quick learner and astute reader, aiding in understanding complex information.
-        - Able to use different methods to improve understanding and learning.
-    - heading: Personal Attributes
-      subtext: Independent and Solution-Oriented
+        - Self-managed remote work, accountable without supervision
+        - Structured problem-solver, simplifies complexity
+        - Comfortable with solitude for focused work and with teamwork when needed
+    - heading: Detail-Oriented
       list:
-        - Independent nature; prefers working without direct supervision.
-        - Enjoys solitude, enhancing concentration and productivity.
-        - Ability to simplify complexity and find straightforward solutions.
-    - heading: Interpersonal Qualities
-      subtext: Empathetic and Relationship-Focused
+        - Careful attention to detail and QA
+        - Follows guidelines precisely, checks work before delivery
+        - Quick learner, uses different methods to master new material
+    - heading: Service-Focused Communicator
       list:
-        - Values serving others, especially in one-on-one settings.
-        - Prefers intimate environments over large groups to avoid feeling drained.
-        - Committed to fostering positive communication and building rapport with others.
-
-# Alternate paragraph-style variant (not rendered; kept for reference).
-# Mirrors the old `characteristics-off` block from details.md.
-characteristics-off:
-  heading: Character and Abilities
-  list:
-    - heading: Cognitive Skills
-      par: Possessing strong analytical thinking and a careful attention to detail. I learn quickly and am an astute reader, which helps me understand complex information. However, I have dyslexia and poor memory, which hinders my writing and retention.
-    - heading: Personal Attributes
-      par: My independent nature makes it my preference to work without direct supervision. I take great pleasure in solitude, as it enhances my concentration and productivity. Additionally, my simplicity allows me to look through complexity and find straightforward solutions.
-    - heading: Interpersonal Qualities
-      par: I deeply value serving others, especially in one-on-one settings. Large groups can be draining for me; I prefer more intimate environments. I recognize that my speech can sometimes be direct and harsh, particularly towards authority, and I am actively working to improve this.
+        - Patient 1:1 support and teaching
+        - Clear, calm written communication
+        - Builds rapport in multicultural, remote settings
 
 # Settings (replaces pandoc frontmatter `fontsize`, `lang`, `geometry`)
 fontsize: 12pt
 lang: en
 margins:
-  left: 25mm
-  right: 25mm
-  top: 20mm
-  bottom: 20mm
+  left: 20mm
+  right: 20mm
+  top: 18mm
+  bottom: 18mm

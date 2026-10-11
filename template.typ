@@ -99,6 +99,15 @@
     par[#intro]
   }
 
+  // --- Skills section (same card layout as characteristics) ---
+  let skills = data.at("skills", default: none)
+  if skills != none {
+    cv-section(skills.heading)
+    for entry in skills.at("list", default: ()) {
+      cv-characteristics-entry(entry)
+    }
+  }
+
   // --- Timeline section ---
   let timeline = data.at("timeline", default: none)
   if timeline != none {
